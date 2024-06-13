@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Description</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    position: absolute;
+    bottom: -150px; /* Start position outside the container */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    transition: transform 0.5s, opacity 0.5s; /* Add opacity transition */
+    opacity: 0; /* Hide initially */
+}
+
+.image-container:hover .description {
+    bottom: 30%; /* Move to the middle */
+    transform: translateY(50%);
+    opacity: 1; /* Show on hover */
+}
+
+.image-container:hover img {
+    filter: brightness(70%); /* Optional: dim the image on hover */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="image.jpg" alt="Image">
+        <div class="description">
+            <h2>Description Title</h2>
+            <p>This is the description of the image.</p>
+        </div>
+    </div>
+</body>
+</html>

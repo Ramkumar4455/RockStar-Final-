@@ -1,0 +1,415 @@
+body{
+        margin: 0;
+        background-color: black;
+        height: 2600px;
+
+
+        
+}
+
+.trailer{
+    background: rgb(8,93,200);
+background: -moz-linear-gradient(90deg, rgba(8,93,200,1) 1%, rgba(189,35,139,1) 49%, rgba(219,132,31,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(8,93,200,1) 1%, rgba(189,35,139,1) 49%, rgba(219,132,31,1) 100%);
+background: linear-gradient(90deg, rgba(8,93,200,1) 1%, rgba(189,35,139,1) 49%, rgba(219,132,31,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#085dc8",endColorstr="#db841f",GradientType=1);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+    box-sizing: border-box;
+   
+}
+
+.trailer-text{
+    font-weight: bold;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.header{
+   
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    z-index: 90;
+    top: 70px;
+    background-color: black;
+
+    transition: 0.7s;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div{
+  
+    
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header1 img{
+    height: 100%;
+}
+.header1{
+    flex-grow: 2;
+}
+
+.header2{
+    flex-grow: 2;
+    display: flex;
+  
+    align-items: center;
+}
+.header2 div{
+    width: 110px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+    border-bottom: 3px solid black;
+}
+.header2 div:hover{
+    border-bottom: 3px solid white;
+}
+
+
+.header3{
+    flex-grow: 2;
+    border-bottom: 1px solid rgb(69, 65, 65);
+}
+
+
+.h3-2 img{
+    cursor: pointer;
+    height: 40%;
+}
+
+.launcher{
+    margin-right: 30px;
+     background-color: #FBB529;
+     padding: 10px 15px;
+     border: none;
+     font-weight: bold;
+     font-size: 16px;
+     border-radius: 7px;
+     cursor: pointer;
+     transition: 0.5s;
+  
+}
+
+.launcher:hover{
+    opacity: 0.8;
+}
+.h3-3 img{
+    cursor: pointer;
+    height: 40%;
+    margin-left: 30px;
+}
+
+.sliding-image-container{
+  
+    display: flex;
+    margin-top: 143px;
+}
+
+.sub-container{
+    z-index: -1;
+    display: flex;
+    width: 1048px;
+
+      overflow: hidden;
+      position: relative;
+
+      height: 590px;
+      background-color: white;
+}
+
+.sliding-image{
+   
+    width: 100%;
+    flex: 0 0 auto;    
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sliding-text{
+    flex-grow: 1;
+   
+}
+
+.slide{
+    width: 100%;
+}
+
+.texts{
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.heading{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+}
+
+.he-1{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.he-2{
+    margin-top: 2px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.text-button{
+    padding: 20px 70px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.text-button:hover{
+    color: black;
+    background-color: #FBB529;
+    border: none;
+}
+
+.sub-head{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+
+}
+
+.text-buttons{
+    width: 80px;
+    height: 7px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgb(88, 80, 80);
+    cursor: pointer;
+    border: none;
+}
+
+.thick{
+    background-color: white;
+}
+
+
+.below{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 70px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: space-around;
+    
+}
+
+.below-2{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: space-around;
+}
+
+.container-1{
+    cursor: pointer;
+    flex: 1;
+    height: 600px;
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.5s;
+    transform-origin: center;
+    border-radius: 7px;
+
+}
+
+.container-1:hover{
+    transform: scale(1.02); /* Scales the container to 120% */
+    box-shadow: 0 10px 30px rgba(240, 240, 240, 0.2);
+}
+
+.img-cont{
+    width: 100%;
+    height: 77%;
+
+}
+
+.img-cont img{
+    width: 100%;
+    height: 100%;
+}
+
+.g-name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.g-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 26px;
+}
+
+.featured-games{
+
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: cover;
+    object-position: top;
+}
+
+.description {
+    position: absolute;
+    bottom: -150px; /* Start position outside the container */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    transition: transform 0.5s, opacity 0.5s; /* Add opacity transition */
+    opacity: 0; /* Hide initially */
+}
+
+.image-container:hover .description {
+    bottom: 20%; /* Move to the middle */
+    transform: translateY(50%);
+    opacity: 1; /* Show on hover */
+}
+
+.image-container:hover img {
+    filter: brightness(70%); /* Optional: dim the image on hover */
+}
+
+
+
+
+/* .f-img img{
+    height: 300px;
+    width: 80%;
+    background-size: cover;
+    background-position: center top;
+}
+
+.f-img{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+ */
+
+ 
+.f-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-weight: bold;
+    color: white;
+    font-size: 26px;
+
+}
+
+.bio-button{
+   margin-top: 20px;
+    font-weight: bold;
+    border: none;
+    background:none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Merienda';
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+ 
+}
+
+.center-button{
+    display: flex;
+    justify-content: center;
+}
+
+.bio-button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+   height: 5px;
+    width: 0;
+    z-index: 10;
+    transition: 0.5s;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: #FBB529;
+}
+
+.change-bio-button:hover::before{
+    width: 100%;
+   
+}
+
+.update::before{
+    width: 100%;
+}
+
+.thala{
+    margin-left: 30px;
+    margin-right: 30px;
+}
